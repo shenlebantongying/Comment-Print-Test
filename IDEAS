@@ -1,0 +1,8 @@
+DO:
+
+* Test the script itself -> need some print -> "-d --debug" mode
+
+
+Don't do:
+
+* Multiple files: no, this can be done via a shell script.
