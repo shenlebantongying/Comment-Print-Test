@@ -1,0 +1,12 @@
+DO:
+
+* Test the script itself -> need some print -> "-d --debug" mode
+
+* Make structural tests -> like convert a tree to json, and compare the result.
+* Parameterized test -> Some times, certain value can only be obtained in runtime
+
+* Above two can be easily solved by introduce a simple `[[ primary name | structural = t | parameter = a]]`
+
+Don't do:
+
+* Multiple files: no, this can be done via a shell script.
