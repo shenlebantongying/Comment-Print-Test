@@ -20,8 +20,6 @@ if __name__ == "__main__":
     source  = args["source"]
     command = args["command"]
 
-    expected = []
-
     expected_result = list(filter(None, os.popen(args["command"]).read().split("\n")))
     source_file=open(args["source"]).readlines()
 
@@ -35,7 +33,7 @@ if __name__ == "__main__":
         p = re.search(r'\[\[(.*)\]\]', line)
         if p is not None:
 
-            print(r'[{a}/{b}]=>'.format(a=test_number,b=test_total), source_file[line_number+1].strip())
+            print(r'[{a}/{b}]=>'.format(a=test_number+1,b=test_total), source_file[line_number+1].strip())
 
             if p.group(1).strip() != expected_result[test_number]:
                 failed += 1
