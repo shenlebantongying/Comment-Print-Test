@@ -1,4 +1,6 @@
-DO:
+DO
+
+* error handling, tcl8.6 -> try catch?
 
 * Test the script itself -> need some print -> "-d --debug" mode
 

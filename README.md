@@ -4,6 +4,8 @@
 
 A simple __[suckless](https://suckless.org/philosophy/)__ unit testing utility for __every programming languages__ that can `comment` and `print`!
 
+It currently has two implementation: Python and Tcl.
+
 ## Usage
 Step 1: __Comment__ your testing subroutines inside a __Print__ like this:
 
@@ -40,18 +42,15 @@ I regularly try a new languages for fun. However, almost every [unit testing sui
 Name a few:
 
 * JUnit -> Half of the functionalities is "enterprises-ish" but useless. There are even WTF like [Disabling Tests](https://junit.org/junit5/docs/current/user-guide/#writing-tests-disabling)! Why not just comment out the code to disable.
-* GoogleTest -> Half of the [document](https://google.github.io/googletest/) is about the quirks of C++++++++++++ plus [more quirks of the framework itself](https://chromium.googlesource.com/external/github.com/google/googletest/+/refs/tags/release-1.8.1/googletest/docs/faq.md). You can write test to the perfection level in the sence of C++++++++++++, but what's the point?
+* GoogleTest -> Half of the [document](https://google.github.io/googletest/) is about the quirks of C++++++++++++ plus [more quirks of the framework itself](https://chromium.googlesource.com/external/github.com/google/googletest/+/refs/tags/release-1.8.1/googletest/docs/faq.md). You can write test to the perfection level in the scene of C++++++++++++, but what's the point?
 * OCaml Dune -> Introduce an alien language `ppx`, manipulating the AST of OCaml for test!
 * Anything named like xUnit is probably crap!
-
 
 ### Why there are no test description/id like xUnit?
 
 If you know the line number, just go there, read the test code. If you cannot understand your test by subroutine name, then your naming suck. If you need more info, just put some comments around it.
 
 The xUnit frameworks use the language itself and operate inside the source code, so they usually cannot know the exact line number for a test. The need to add a text id/description is just __useless__ technical wart.
-
-
 
 ### How to test multiple files?
 
@@ -69,7 +68,7 @@ Does your programming language execute in a random order??
 
 ### Why no cross-platform support?
 
-Why you mix test codes form 3+ flatform in the first place?  just split them into `test-windows`,`test-linux`.
+Why you mix test codes form 3+ platform in the first place?  just split them into `test-windows`,`test-linux`.
 
 ### Your script is too simple to be useful!
 
